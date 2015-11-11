@@ -10,6 +10,9 @@ def pandas_rs_version():
         open('pandas_rs/version.py').read()
     ).group(1)
 
+def readme():
+    return open("README.md").read()
+
 setup(
     name = "pandas-rs",
     packages = ["pandas_rs"],
@@ -28,5 +31,6 @@ setup(
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Topic :: Software Development :: Libraries :: Python Modules",
-    ]
+    ],
+    long_description = readme()
 )
