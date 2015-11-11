@@ -3,12 +3,18 @@ try:
 except ImportError:
     from distutils.core import setup
 
+def pandas_rs_version():
+    import re
+    version_regex  = re.compile(r'__version__ = "([^\"]*)"')
+    return version_regex.match(
+        open('pandas_rs/version.py').read()
+    ).group(1)
 
 setup(
     name = "pandas-rs",
     packages = ["pandas_rs"],
     install_requires = ["pandas", "psycopg2"],
-    version = "0.1.0",
+    version = pandas_rs_version(),
     description = "pandas extension for AWS RedShift (Not Officail library)",
     author = "Tatsuro Yasukawa",
     author_email = "mark@diveintomark.org",
