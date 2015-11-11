@@ -10,8 +10,18 @@ def pandas_rs_version():
         open('pandas_rs/version.py').read()
     ).group(1)
 
-def readme():
-    return open("README.md").read()
+
+def read_file(filename):
+    filepath = os.path.join(
+        os.path.dirname(
+            os.path.dirname(__file__)
+        ),
+        filename
+    )
+    if os.path.exists(filepath):
+        return open(filepath).read()
+    else:
+        return ''
 
 setup(
     name = "pandas-rs",
@@ -32,5 +42,5 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
-    long_description = readme()
+    long_description = read_file('README.md')
 )
