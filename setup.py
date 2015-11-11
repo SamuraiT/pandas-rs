@@ -6,7 +6,8 @@ except ImportError:
 
 setup(
     name = "pandas-rs",
-    packages = ["pandas-rs"],
+    packages = ["pandas_rs"],
+    install_requires = ["pandas", "psycopg2"],
     version = "0.1.0",
     description = "pandas extension for AWS RedShift (Not Officail library)",
     author = "Tatsuro Yasukawa",
@@ -22,4 +23,4 @@ setup(
         "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ]
-    )
+)
