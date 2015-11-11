@@ -3,13 +3,14 @@ try:
 except ImportError:
     from distutils.core import setup
 
+import re
+import os
+
 def pandas_rs_version():
-    import re
     version_regex  = re.compile(r'__version__ = "([^\"]*)"')
     return version_regex.match(
         open('pandas_rs/version.py').read()
     ).group(1)
-
 
 def read_file(filename):
     filepath = os.path.join(
