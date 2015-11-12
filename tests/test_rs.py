@@ -6,8 +6,8 @@ class TestPandasRs(object):
 
     def test_create_engine(self):
         assert None is rs.create_engine(
-            dbname='circle_test',
-            user='ubuntu',
+            dbname='test_pandas_rs_db',
+            user='test_pandas_rs',
             password='',
             host='localhost',
             port='5432'
