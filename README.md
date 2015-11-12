@@ -1,9 +1,9 @@
 # pandas-rs
 
 pandas-rs is oirginally designed for RedShift but
-also work for PostgreSQL. Inspired by [pandas-td](https://github.com/treasure-data/pandas-td)
+also works for PostgreSQL. Inspired by [pandas-td](https://github.com/treasure-data/pandas-td)
 
-I may should have made the package name as pandas-pg, since It also work for
+I may should have made the package name as pandas-pg, since It also works for
 PostgreSQL.
 
 # installation
