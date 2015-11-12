@@ -6,6 +6,16 @@ also works for PostgreSQL. Inspired by [pandas-td](https://github.com/treasure-d
 I may should have made the package name as pandas-pg, since It also works for
 PostgreSQL.
 
+# requirement
+To connect PostgreSQL and RedShift, you have to have the PostgreSQL client.
+
+### Mac
+
+~~~
+brew update
+brew install postgresql
+~~~
+
 # installation
 
 ~~~
