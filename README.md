@@ -1,3 +1,5 @@
+[![Circle CI](https://circleci.com/gh/SamuraiT/pandas-rs.svg?style=svg)](https://circleci.com/gh/SamuraiT/pandas-rs)
+
 # pandas-rs
 
 pandas-rs is oirginally designed for RedShift but
