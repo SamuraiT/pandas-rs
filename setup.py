@@ -31,7 +31,7 @@ setup(
     version = pandas_rs_version(),
     description = "pandas extension for AWS RedShift (Not Officail library)",
     author = "Tatsuro Yasukawa",
-    author_email = "mark@diveintomark.org",
+    author_email = "t.yasukawa01@gmail.com",
     url = "https://github.com/SamuraiT/pandas-rs",
     download_url = "",
     keywords = ["pandas", "RedShift", "sql"],
